@@ -159,7 +159,7 @@ export default function AboutPage() {
                 We saw students and professionals struggling with cluttered, overwhelming tools that promised productivity but delivered confusion.
               </p>
               <p className="text-lg text-slate-600 dark:text-slate-400 dark:text-shadow-[0_0_8px_rgba(29,203,242,0.3)] mb-6">
-                As Canadians, we value simplicity, reliability, and genuine helpfulness. That's why we built ClaritySync—clean, 
+                As Canadians, we value simplicity, reliability, and genuine helpfulness. That&apos;s why we built ClaritySync—clean, 
                 easy-to-use Notion templates and widgets that actually work the way you think.
               </p>
               <p className="text-lg text-slate-600 dark:text-slate-400 dark:text-shadow-[0_0_8px_rgba(29,203,242,0.3)]">
