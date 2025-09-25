@@ -137,7 +137,7 @@ export default function AboutPage() {
             About ClaritySync
           </h1>
           <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
-            Student built for students. We're on a mission to make productivity simple and accessible for everyone.
+            Student built for students. We&apos;re on a mission to make productivity simple and accessible for everyone.
           </p>
         </section>
 
@@ -163,7 +163,7 @@ export default function AboutPage() {
                 easy-to-use Notion templates and widgets that actually work the way you think.
               </p>
               <p className="text-lg text-slate-600 dark:text-slate-400 dark:text-shadow-[0_0_8px_rgba(29,203,242,0.3)]">
-                We're especially passionate about helping students succeed. Whether you're managing coursework, 
+                We&apos;re especially passionate about helping students succeed. Whether you&apos;re managing coursework, 
                 planning projects, or staying organized, our tools are designed to support your academic journey.
               </p>
             </div>
@@ -188,7 +188,7 @@ export default function AboutPage() {
           </h2>
           
           <p className="text-lg text-center text-slate-600 dark:text-slate-400 mb-12 max-w-3xl mx-auto">
-            We're on a mission to make productivity simple and accessible for everyone, especially students. 
+                We&apos;re on a mission to make productivity simple and accessible for everyone, especially students.
             Our values guide everything we create—from the Notion templates we design to the widgets we build.
           </p>
           
@@ -304,3 +304,5 @@ export default function AboutPage() {
     </div>
   );
 }
+
+
