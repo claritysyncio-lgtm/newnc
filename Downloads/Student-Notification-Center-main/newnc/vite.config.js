@@ -11,39 +11,23 @@ import { resolve } from 'path'
  * It includes React support, development server settings, and build optimizations.
  */
 export default defineConfig({
-  plugins: [
-    react(),
-    // Custom plugin to copy legal.html to dist folder
-    {
-      name: 'copy-legal',
-      writeBundle() {
-        try {
-          copyFileSync(
-            resolve(__dirname, 'legal.html'),
-            resolve(__dirname, 'dist/legal.html')
-          )
-        } catch (error) {
-          console.warn('Could not copy legal.html:', error.message)
-        }
-      }
-    }
-  ],
+  plugins: [react()],
   
   // Development server configuration
   server: {
     port: 5173,
-    host: true, // Allow external connections
-    open: false // Don't auto-open browser
+    host: true,
+    open: false
   },
   
-  // Build configuration
+  // Build configuration optimized for Vercel
   build: {
     outDir: 'dist',
-    sourcemap: false, // Disable sourcemaps for production
-    minify: 'esbuild', // Use esbuild for faster minification
+    sourcemap: false,
+    minify: 'esbuild',
+    target: 'es2015',
     rollupOptions: {
       output: {
-        // Ensure consistent chunk naming
         chunkFileNames: 'assets/[name]-[hash].js',
         entryFileNames: 'assets/[name]-[hash].js',
         assetFileNames: 'assets/[name]-[hash].[ext]'
@@ -53,6 +37,9 @@ export default defineConfig({
   
   // Public directory for static assets
   publicDir: 'public',
+  
+  // Base path for deployment
+  base: '/',
   
   // Define global constants
   define: {
