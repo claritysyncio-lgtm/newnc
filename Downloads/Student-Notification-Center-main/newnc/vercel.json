@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/embed.html",
+      "dest": "/embed.html"
+    },
+    {
+      "src": "/legal.html",
+      "dest": "/legal.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
