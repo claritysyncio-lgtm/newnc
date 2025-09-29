@@ -41,15 +41,21 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false, // Disable sourcemaps for production
-    minify: 'esbuild', // Use esbuild for faster minification
+    minify: 'terser', // Use terser instead of esbuild for better CSP compliance
     rollupOptions: {
       output: {
         // Ensure consistent chunk naming
         chunkFileNames: 'assets/[name]-[hash].js',
         entryFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash].[ext]'
+        assetFileNames: 'assets/[name]-[hash].[ext]',
+        // Avoid eval usage for CSP compliance
+        format: 'iife',
+        inlineDynamicImports: true
       }
-    }
+    },
+    // Disable eval usage for CSP compliance
+    target: 'es2015',
+    cssCodeSplit: false
   },
   
   // Public directory for static assets
