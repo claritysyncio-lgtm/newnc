@@ -1,10 +1,10 @@
 {
   "name": "ClaritySync Notification Center",
   "description": "A beautiful, customizable notification center widget for displaying and managing your Notion tasks. Perfect for students, professionals, and anyone who wants to keep track of their tasks and deadlines.",
-  "website": "https://notification-center-for-customers.vercel.app/",
-  "privacy_policy": "https://notification-center-for-customers.vercel.app/privacy-policy",
-  "terms_of_service": "https://notification-center-for-customers.vercel.app/terms-of-service",
-  "support_url": "https://notification-center-for-customers.vercel.app/",
+  "website": "https://newnc.vercel.app/",
+  "privacy_policy": "https://newnc.vercel.app/legal.html",
+  "terms_of_service": "https://newnc.vercel.app/legal.html",
+  "support_url": "https://newnc.vercel.app/",
   "capabilities": {
     "read_database": {
       "description": "Read task data from your Notion databases to display in the notification center widget",

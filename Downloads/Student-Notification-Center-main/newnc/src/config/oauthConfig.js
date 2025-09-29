@@ -6,10 +6,10 @@
  */
 
 // Notion OAuth client configuration
-const NOTION_CLIENT_ID = import.meta.env.VITE_NOTION_CLIENT_ID || '277d872b-594c-8009-a497-003712a5baf8';
+const NOTION_CLIENT_ID = import.meta.env.VITE_NOTION_CLIENT_ID;
 
 // Base URL for the application - update this when deploying
-const BASE_URL = import.meta.env.VITE_BASE_URL || 'https://student-notification-center.vercel.app';
+const BASE_URL = import.meta.env.VITE_BASE_URL || 'https://newnc.vercel.app';
 
 export const OAUTH_CONFIG = {
   /**

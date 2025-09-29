@@ -111,7 +111,7 @@ https://notification-center-for-customers.vercel.app/
 - **Support**: Contact us for technical assistance
 
 ### Website
-https://notification-center-for-customers.vercel.app/
+https://newnc.vercel.app/
 
 ---
 

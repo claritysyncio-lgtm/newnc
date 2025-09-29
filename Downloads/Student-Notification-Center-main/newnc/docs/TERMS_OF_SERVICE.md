@@ -188,7 +188,7 @@ ClaritySync Notification Center is a secure Notion integration that provides a c
 For questions about these Terms or our Service:
 - **Website**: https://claritysync.io
 - **Email**: support@claritysync.io
-- **Service URL**: https://notification-center-for-customers.vercel.app
+- **Service URL**: https://newnc.vercel.app
 
 ### 11.2 Legal Notices
 For legal matters or formal communications:
