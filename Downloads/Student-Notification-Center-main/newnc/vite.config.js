@@ -11,6 +11,7 @@ import { resolve } from 'path'
  * It includes React support, development server settings, and build optimizations.
  */
 export default defineConfig({
+  base: '/',
   plugins: [
     react(),
     // Custom plugin to copy legal.html to dist folder
